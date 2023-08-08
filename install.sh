@@ -18,14 +18,16 @@ if [ -f "${HOME}/gitversion-linux-64.tar.gz" ]; then
 fi
 
 # Install zsh plugin
-# if [ -d "${HOME}/.oh-my-zsh/custom/plugins" ]; then
-#     echo "install zsh-autosuggestions"
-#     git clone https://github.com/zsh-users/zsh-autosuggestions ${HOME}/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-#     echo "# load zsh-autosuggestions" >>${HOME}/.zshrc
-#     echo "source ${HOME}/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" >>${HOME}/.zshrc
+if [ -d "${HOME}/.oh-my-zsh/custom/plugins" ]; then
+    echo "install zsh-autosuggestions"
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${HOME}/zsh-autosuggestions
+    mv ${HOME}/zsh-autosuggestions/zsh-autosuggestions.zsh ${HOME}/.oh-my-zsh/custom/plugins/
+    # echo "# load zsh-autosuggestions" >>${HOME}/.zshrc
+    # echo "source ${HOME}/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" >>${HOME}/.zshrc
 
-#     echo "install zsh-syntax-highlighting"
-#     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${HOME}/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-#     echo "# load zsh-syntax-highlighting.git" >>${HOME}/.zshrc
-#     echo "source ${HOME}/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >>${HOME}/.zshrc
-# fi
+    echo "install zsh-syntax-highlighting"
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${HOME}/zsh-syntax-highlighting
+    mv ${HOME}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ${HOME}/.oh-my-zsh/custom/plugins/
+    # echo "# load zsh-syntax-highlighting.git" >>${HOME}/.zshrc
+    # echo "source ${HOME}/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >>${HOME}/.zshrc
+fi
