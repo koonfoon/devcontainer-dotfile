@@ -27,7 +27,10 @@ if [ -d "${HOME}/.oh-my-zsh/custom/plugins" ]; then
 
     echo "install zsh-syntax-highlighting"
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${HOME}/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-    mv ${HOME}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ${HOME}/.oh-my-zsh/custom/plugins/
+    # mv ${HOME}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ${HOME}/.oh-my-zsh/custom/plugins/
     # echo "# load zsh-syntax-highlighting.git" >>${HOME}/.zshrc
     # echo "source ${HOME}/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >>${HOME}/.zshrc
 fi
+
+# Replace .zshrc file
+mv -f /workspaces/.codespaces/.persistedshare/dotfiles/.zshrc ${HOME}/.zshrc
