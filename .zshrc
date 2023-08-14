@@ -4,7 +4,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-# Disalve fzf auto complete
+# Disable fzf auto complete
 DISABLE_FZF_AUTO_COMPLETION="true"
 
 # Set name of the theme to load --- if set to "random", it will
