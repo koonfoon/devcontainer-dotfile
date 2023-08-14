@@ -20,7 +20,6 @@ fi
 # Install fzf
 echo 'install fzf'
 sudo apt install fzf
-sudo wget -P /usr/share/doc/fzf/examples/ https://github.com/junegunn/fzf/blob/master/shell/key-bindings.zsh
 
 # Install zsh plugin
 if [ -d "${HOME}/.oh-my-zsh/custom/plugins" ]; then
