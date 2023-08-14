@@ -17,10 +17,6 @@ if [ -f "${HOME}/gitversion-linux-64.tar.gz" ]; then
     rm -rf ~/gitversion-linux-64.tar.gz
 fi
 
-# Install fzf
-echo 'install fzf'
-sudo apt install fzf
-
 # Install zsh plugin
 if [ -d "${HOME}/.oh-my-zsh/custom/plugins" ]; then
     echo "install zsh-autosuggestions"
