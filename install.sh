@@ -18,7 +18,9 @@ if [ -f "${HOME}/gitversion-linux-64.tar.gz" ]; then
 fi
 
 # Install fzf
+echo 'install fzf'
 sudo apt install fzf
+wget -P /usr/share/doc/fzf/examples/ https://github.com/junegunn/fzf/blob/master/shell/key-bindings.zsh
 
 # Install zsh plugin
 if [ -d "${HOME}/.oh-my-zsh/custom/plugins" ]; then
