@@ -38,4 +38,5 @@ mv -f /workspaces/.codespaces/.persistedshare/dotfiles/.zshrc ${HOME}/.zshrc
 # Append to .bashrc to make zsh alias to zs
 echo "alias zs=zsh" >> ${HOME}/.bashrc
 
+echo 'Display current working dir'
 pwd
