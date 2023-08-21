@@ -30,6 +30,10 @@ if [ -d "${HOME}/.oh-my-zsh/custom/plugins" ]; then
     # mv ${HOME}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ${HOME}/.oh-my-zsh/custom/plugins/
     # echo "# load zsh-syntax-highlighting.git" >>${HOME}/.zshrc
     # echo "source ${HOME}/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >>${HOME}/.zshrc
+
+    echo 'install k'
+    git clone git@github.com:supercrabtree/k.git ${HOME}/.oh-my-zsh/custom/plugins/k
+    
 fi
 
 # Replace .zshrc file
@@ -39,3 +43,10 @@ mv -f ./.zshrc ${HOME}/.zshrc
 echo 'appending alias to zsh command to .bashrc'
 echo '# zsh alias' >> ${HOME}/.bashrc
 echo "alias zs=zsh" >> ${HOME}/.bashrc
+
+# Append to .bashrc to make extract alias to x
+echo 'appending alias to extract alias to x'
+echo '# extract alias' >> ${HOME}/.bashrc
+echo 'alias extract=x' >> ${HOME}/.bashrc
+
+
