@@ -33,7 +33,7 @@ if [ -d "${HOME}/.oh-my-zsh/custom/plugins" ]; then
 fi
 
 # Replace .zshrc file
-mv -f /workspaces/.codespaces/.persistedshare/dotfiles/.zshrc ${HOME}/.zshrc
+mv -f ./.zshrc ${HOME}/.zshrc
 
 # Append to .bashrc to make zsh alias to zs
 echo "alias zs=zsh" >> ${HOME}/.bashrc
