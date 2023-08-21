@@ -32,7 +32,7 @@ if [ -d "${HOME}/.oh-my-zsh/custom/plugins" ]; then
     # echo "source ${HOME}/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >>${HOME}/.zshrc
 
     echo 'install k'
-    git clone git@github.com:supercrabtree/k.git ${HOME}/.oh-my-zsh/custom/plugins/k
+    git clone https://github.com/supercrabtree/k ${HOME}/.oh-my-zsh/custom/plugins/k
     
 fi
 
