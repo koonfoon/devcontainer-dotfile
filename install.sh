@@ -36,7 +36,6 @@ fi
 mv -f ./.zshrc ${HOME}/.zshrc
 
 # Append to .bashrc to make zsh alias to zs
+echo 'appending alias to zsh command to .bashrc'
+echo '# zsh alias' >> ${HOME}/.bashrc
 echo "alias zs=zsh" >> ${HOME}/.bashrc
-
-echo 'Display current working dir'
-pwd
