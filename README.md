@@ -8,8 +8,8 @@ Dotfile for github codespace.
 
 2) Install [GitVersion](https://github.com/GitTools/GitVersion).
 
-3) Install ```zsh-autosuggestions```  & ```zsh-syntax-highlighting```
+3) Install ```zsh-autosuggestions```, ```zsh-syntax-highlighting``` and ```k```
 
 4) Replace ```~/.zshrc``` with the ```.zshrc``` from this repo. (load plugins installed on step 3)
 
-5) Make alias ```zs``` for ```zsh```
+5) Make alias ```zs``` for ```zsh``` and ```x``` for ```extract```
