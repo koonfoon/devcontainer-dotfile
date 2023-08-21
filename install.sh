@@ -35,5 +35,5 @@ fi
 # Replace .zshrc file
 mv -f /workspaces/.codespaces/.persistedshare/dotfiles/.zshrc ${HOME}/.zshrc
 
-# Make command alias
-alias zs='zsh'
+# Append to .bashrc to make zsh alias to zs
+echo "alias zs=zsh" >> ${HOME}/.bashrc
