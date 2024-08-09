@@ -6,7 +6,7 @@ sudo apt dist-upgrade -y
 
 # Install gitversion
 echo 'install gitversion'
-wget https://github.com/GitTools/GitVersion/releases/download/5.12.0/gitversion-linux-x64-5.12.0.tar.gz -O ~/gitversion-linux-64.tar.gz
+wget https://github.com/GitTools/GitVersion/releases/download/6.0.1/gitversion-linux-x64-6.0.1.tar.gz -O ~/gitversion-linux-64.tar.gz
 if [ -f "${HOME}/gitversion-linux-64.tar.gz" ]; then
     echo 'unpacking ~/gitversion-linux-64.tar.gz'
     tar -xvf ~/gitversion-linux-64.tar.gz -C ${HOME}
